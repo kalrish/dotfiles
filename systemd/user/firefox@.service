@@ -6,11 +6,10 @@ After=psd.service
 
 [Service]
 Type=exec
-# MOZ_ENABLE_WAYLAND, if at all needed, should be specified
-# elsewhere (e.g. in ${XDG_CONFIG_HOME}/environment.d/),
-# so that it applies to browser instances started by other
-# means too.
-#Environment=MOZ_ENABLE_WAYLAND=1
+# MOZ_ENABLE_WAYLAND should be set outside the scope of this unit template
+# (e.g. in ${XDG_CONFIG_HOME}/environment.d/) as well, so that it applies
+# to browser instances started by other means.
+Environment=MOZ_ENABLE_WAYLAND=1
 # FIXME: find out actual dependency
 ExecStartPre=/usr/bin/sleep 10
 ExecStart=/usr/lib/firefox/firefox -P %i
