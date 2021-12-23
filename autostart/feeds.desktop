@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=RSS reader
+Exec=gfeeds
+Name=Feeds
+Terminal=false
+Type=Application

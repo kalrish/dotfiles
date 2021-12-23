@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Firefox with Smaato profile
+Exec=firefox -P Smaato
+Name=Firefox
+Terminal=false
+Type=Application
+X-GNOME-Autostart-Delay=5

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=gnome-terminal --wait --maximize
+Name=Terminal
+Terminal=false
+Type=Application
