@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Firefox with personal profile
+Exec=firefox -P personal
+Name=Firefox
+Terminal=false
+Type=Application
+X-GNOME-Autostart-Delay=10
