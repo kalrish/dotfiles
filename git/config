@@ -11,3 +11,12 @@
 	editor = vim
 
 	pager = less --no-init --quit-if-one-screen
+
+
+[pager]
+
+	diff = diff-highlight | less --no-init --quit-if-one-screen
+
+	log = diff-highlight | less --no-init --quit-if-one-screen
+
+	show = diff-highlight | less --no-init --quit-if-one-screen
