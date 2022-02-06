@@ -46,3 +46,8 @@
 [push]
 
 	gpgSign = if-asked
+
+
+[tag]
+
+	gpgSign = true
