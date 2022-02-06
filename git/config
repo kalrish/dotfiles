@@ -5,4 +5,4 @@
 
 	editor = vim
 
-	pager = less --quit-if-one-screen
+	pager = less --no-init --quit-if-one-screen
