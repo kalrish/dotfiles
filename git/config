@@ -1,1 +1,6 @@
 # man:git-config(1)
+
+
+[core]
+
+	editor = vim
