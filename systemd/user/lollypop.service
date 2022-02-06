@@ -1,0 +1,13 @@
+[Unit]
+Description=Music player
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/lollypop
+Restart=no
+Slice=app.slice
+
+[Install]
+WantedBy=gnome-session-wayland.target
