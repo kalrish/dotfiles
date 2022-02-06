@@ -20,8 +20,8 @@
 
 [pager]
 
-	diff = diff-highlight | less --no-init --quit-if-one-screen
+	diff = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
 
-	log = diff-highlight | less --no-init --quit-if-one-screen
+	log = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
 
-	show = diff-highlight | less --no-init --quit-if-one-screen
+	show = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
