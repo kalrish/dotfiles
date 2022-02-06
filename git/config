@@ -1,5 +1,8 @@
 # man:git-config(1)
 
+[commit]
+	gpgSign = true
+
 [core]
 	editor = vim
 	pager = less --no-init --quit-if-one-screen
