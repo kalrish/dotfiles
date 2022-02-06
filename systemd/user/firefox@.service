@@ -1,0 +1,21 @@
+[Unit]
+Description=Firefox with %i profile
+After=graphical-session.target
+PartOf=graphical-session.target
+After=psd.service
+
+[Service]
+Type=exec
+# MOZ_ENABLE_WAYLAND, if at all needed, should be specified
+# elsewhere (e.g. in ${XDG_CONFIG_HOME}/environment.d/),
+# so that it applies to browser instances started by other
+# means too.
+#Environment=MOZ_ENABLE_WAYLAND=1
+# FIXME: find out actual dependency
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/usr/lib/firefox/firefox -P %i
+Restart=no
+Slice=app.slice
+
+[Install]
+WantedBy=gnome-session-wayland.target
