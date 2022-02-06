@@ -29,6 +29,11 @@
 	smudge = git-lfs smudge -- %f
 
 
+[gpg]
+
+	format = openpgp
+
+
 [init]
 
 	defaultBranch = trunk
@@ -58,3 +63,5 @@
 	email = david@djsp.eu
 
 	name = David Joaquín Shourabi Porcel
+
+	signingKey = 32884194D7B577F098AA6E5E4BCC1BAF73B8B7E8
