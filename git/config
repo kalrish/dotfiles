@@ -13,6 +13,11 @@
 	pager = less --no-init --quit-if-one-screen
 
 
+[credential]
+
+	helper = libsecret
+
+
 [pager]
 
 	diff = diff-highlight | less --no-init --quit-if-one-screen
