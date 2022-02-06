@@ -2,3 +2,4 @@
 
 [core]
 	editor = vim
+	pager = less --quit-if-one-screen
