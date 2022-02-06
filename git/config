@@ -41,3 +41,8 @@
 	log = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
 
 	show = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
+
+
+[push]
+
+	gpgSign = if-asked
