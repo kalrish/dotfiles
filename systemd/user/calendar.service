@@ -1,0 +1,13 @@
+[Unit]
+Description=Calendar
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/gnome-calendar
+Restart=no
+Slice=app.slice
+
+[Install]
+WantedBy=gnome-session-wayland.target
