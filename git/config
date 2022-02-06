@@ -1,6 +1,11 @@
 # man:git-config(1)
 
 
+[commit]
+
+	gpgSign = true
+
+
 [core]
 
 	editor = vim
