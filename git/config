@@ -29,6 +29,11 @@
 	smudge = git-lfs smudge -- %f
 
 
+[init]
+
+	defaultBranch = trunk
+
+
 [pager]
 
 	diff = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
