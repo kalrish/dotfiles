@@ -1,3 +1,3 @@
 [submodule "k8s/smaato"]
 	path = k8s/smaato
-	url = ssh://bitbucket.git/~david.porcel/kubeconfig.git
+	url = ssh://github.git/kalrish/smaato-kubeconfig.git
