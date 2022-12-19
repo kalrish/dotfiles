@@ -67,6 +67,11 @@
 	signingKey = 32884194D7B577F098AA6E5E4BCC1BAF73B8B7E8
 
 
+[includeIf "gitdir:~/dev/evoila/**"]
+
+	path = evoila
+
+
 [includeIf "gitdir:~/dev/smaato/**"]
 
 	path = smaato
