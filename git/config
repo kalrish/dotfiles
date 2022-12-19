@@ -37,5 +37,8 @@
 [include]
 	path = personal
 
+[includeIf "gitdir:~/dev/evoila/**"]
+	path = evoila
+
 [includeIf "gitdir:~/dev/smaato/**"]
 	path = smaato
