@@ -2,5 +2,7 @@
 {
 	"aws.telemetry": false,
 
+	"redhat.telemetry.enabled": false,
+
 	"workbench.colorTheme": "Default High Contrast",
 }
