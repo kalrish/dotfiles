@@ -66,6 +66,8 @@
 	// Flake8 includes pycodestyle
 	"python.linting.pycodestyleEnabled": false,
 
+	"python.linting.pydocstyleEnabled": true,
+
 	"python.linting.pylintEnabled": true,
 
 	/*
