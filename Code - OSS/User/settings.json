@@ -68,6 +68,16 @@
 
 	"python.linting.pydocstyleEnabled": true,
 
+	/*
+		pydocstyle shouldn't need access to the dependencies of the code it checks.
+		Therefore, pydocstyle doesn't have to be installed into, and run from, the virtualenv of the project being checked;
+		instead, the system package may be used.
+
+		With a relative path, Code OSS would look for pydocstyle in the activated virtualenv;
+		an absolute path is necessary for Code OSS to pick the system version.
+	*/
+	"python.linting.pydocstylePath": "/usr/bin/pydocstyle",
+
 	"python.linting.pylintEnabled": true,
 
 	/*
