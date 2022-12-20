@@ -29,6 +29,9 @@
 	*/
 	"python.linting.flake8Path": "/usr/bin/flake8",
 
+	// Flake8 includes pycodestyle
+	"python.linting.pycodestyleEnabled": false,
+
 	"python.linting.pylintEnabled": true,
 
 	/*
