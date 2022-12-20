@@ -40,6 +40,14 @@
 	*/
 	"python.linting.mypyPath": "mypy",
 
+	/*
+		Prospector includes:
+		 - Pylint, which is enabled separately;
+		 - pycodestyle, which is included in Flake8; and
+		 - McCabe, which is also included in Flake8.
+	*/
+	"python.linting.prospectorEnabled": false,
+
 	// Flake8 includes pycodestyle
 	"python.linting.pycodestyleEnabled": false,
 
