@@ -31,6 +31,15 @@
 
 	"python.linting.mypyEnabled": true,
 
+	/*
+		Mypy needs access to the dependencies of the Python code it analyzes.
+		Usually, dependencies are installed into a dedicated virtualenv.
+		To access dependencies inside a virtualenv, mypy itself must be installed into the virtualenv.
+
+		With a relative path, Code OSS will look for mypy in the activated virtualenv.
+	*/
+	"python.linting.mypyPath": "mypy",
+
 	// Flake8 includes pycodestyle
 	"python.linting.pycodestyleEnabled": false,
 
