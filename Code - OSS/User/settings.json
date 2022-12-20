@@ -2,6 +2,13 @@
 {
 	"aws.telemetry": false,
 
+	/*
+		The source code for Jedi is open.
+		The source code for Pylance is closed, and only Visual Studio Code can use Pylance;
+		Code OSS cannot.
+	*/
+	"python.languageServer": "Jedi",
+
 	"python.linting.banditEnabled": true,
 
 	/*
