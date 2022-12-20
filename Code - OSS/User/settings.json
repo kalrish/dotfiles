@@ -29,6 +29,8 @@
 	*/
 	"python.linting.flake8Path": "/usr/bin/flake8",
 
+	"python.linting.pylintEnabled": true,
+
 	"redhat.telemetry.enabled": false,
 
 	"workbench.colorTheme": "Default High Contrast",
