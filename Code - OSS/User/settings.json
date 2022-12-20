@@ -4,6 +4,13 @@
 
 	"python.linting.banditEnabled": true,
 
+	/*
+		Bandit seemingly doesn't need access to the dependencies of the code it analyzes.
+		If that's right, then Bandit doesn't have to be installed into, and run from, the virtualenv of the project being analyzed;
+		instead, the system package may be used.
+	*/
+	"python.linting.banditPath": "/usr/bin/bandit",
+
 	"python.linting.enabled": true,
 
 	"python.linting.flake8Enabled": true,
