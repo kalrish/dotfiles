@@ -31,6 +31,15 @@
 
 	"python.linting.pylintEnabled": true,
 
+	/*
+		Pylint needs access to the dependencies of the Python code it analyzes.
+		Usually, dependencies are installed into a dedicated virtualenv.
+		To access dependencies inside a virtualenv, Pylint itself must be installed into the virtualenv.
+
+		With a relative path, Code OSS will look for Pylint in the activated virtualenv.
+	*/
+	"python.linting.pylintPath": "pylint",
+
 	"redhat.telemetry.enabled": false,
 
 	"workbench.colorTheme": "Default High Contrast",
