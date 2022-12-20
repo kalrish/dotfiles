@@ -1,4 +1,6 @@
 // formatted as JSON with comments as parsed by Code OSS
 {
+	"aws.telemetry": false,
+
 	"workbench.colorTheme": "Default High Contrast",
 }
