@@ -4,6 +4,8 @@
 
 	"python.linting.enabled": true,
 
+	"python.linting.flake8Enabled": true,
+
 	"redhat.telemetry.enabled": false,
 
 	"workbench.colorTheme": "Default High Contrast",
