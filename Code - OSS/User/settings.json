@@ -29,6 +29,12 @@
 	*/
 	"python.linting.flake8Path": "/usr/bin/flake8",
 
+	/*
+		Pylama neither lints nor analyzes on its own;
+		instead, it wraps other tools which are enabled separately, like mypy and Pylint.
+	*/
+	"python.linting.pylamaEnabled": false,
+
 	"python.linting.mypyEnabled": true,
 
 	/*
