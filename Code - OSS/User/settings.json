@@ -2,6 +2,8 @@
 {
 	"aws.telemetry": false,
 
+	"python.linting.enabled": true,
+
 	"redhat.telemetry.enabled": false,
 
 	"workbench.colorTheme": "Default High Contrast",
