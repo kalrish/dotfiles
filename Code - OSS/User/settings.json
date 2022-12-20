@@ -9,6 +9,10 @@
 
 	"aws.telemetry": false,
 
+	// The source code for Pylance is closed, and only Visual Studio Code can use it; Code OSS cannot.
+	// The source code for Jedi is open and Code OSS can use it.
+	"python.languageServer": "Jedi",
+
 	"redhat.telemetry.enabled": false,
 
 	"workbench.colorTheme": "Default High Contrast",
