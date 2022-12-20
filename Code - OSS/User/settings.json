@@ -6,6 +6,29 @@
 
 	"python.linting.flake8Enabled": true,
 
+	/*
+		Flake8 doesn't need access to the dependencies of the code it lints, as Anthony Sottile, its maintainer, explained[1] in 2019:
+
+		> flake8 by itself (with the default plugin set) is a purely static linter and does not rely on your installed application dependencies
+
+		On the other hand:
+
+		> It is very important to install Flake8 on the correct version of Python for your needs.
+		> If you want Flake8 to properly parse new language features in Python 3.5 (for example), you need it to be installed on 3.5 for Flake8 to understand those features.
+		> In many ways, Flake8 is tied to the version of Python on which it runs.
+
+		In most cases, the system package of Flake8 is better, because it is kept up to date;
+		the Flake8 in a project's virtualenv might be pinned to a specific version or simply outdated.
+		This ensures forward compatibility in that the Python in a project run under an older version of the language will be reported if it conflicts with any language feature introduced in later versions.
+
+		The setting `python.linting.flake8Path` defaults to `flake8`.
+		With a relative path, as is the default, Code OSS looks for Flake8 in the virtualenv of the corresponding project.
+		To overcome this and let Code OSS use the system package, an absolute path must be specified.
+
+		1: https://stackoverflow.com/a/59438862/2207421
+	*/
+	"python.linting.flake8Path": "/usr/bin/flake8",
+
 	"redhat.telemetry.enabled": false,
 
 	"workbench.colorTheme": "Default High Contrast",
