@@ -27,6 +27,9 @@
 [push]
 	gpgSign = if-asked
 
+[rebase]
+	autoSquash = true
+
 [tag]
 	gpgSign = true
 
