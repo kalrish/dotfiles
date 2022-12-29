@@ -6,3 +6,5 @@
 
 
 [pycodestyle]
+ignore =
+	W191,
