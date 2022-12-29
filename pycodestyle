@@ -1,0 +1,8 @@
+# user level configuration for pycodestyle
+# https://pycodestyle.pycqa.org/en/latest/intro.html#configuration
+
+# SPDX-FileCopyrightText: © 2025 David Joaquín Shourabi Porcel <https://www.djsp.eu/>
+# SPDX-License-Identifier: AGPL-3.0-only
+
+
+[pycodestyle]
