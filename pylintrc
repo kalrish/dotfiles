@@ -1,0 +1,5 @@
+# fallback configuration for Pylint
+# https://pylint.pycqa.org/en/latest/user_guide/usage/run.html
+
+# SPDX-FileCopyrightText: © 2025 David Joaquín Shourabi Porcel <https://www.djsp.eu/>
+# SPDX-License-Identifier: AGPL-3.0-only
