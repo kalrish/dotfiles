@@ -9,6 +9,8 @@
 
 	"aws.telemetry": false,
 
+	"explorer.confirmDelete": false,
+
 	"redhat.telemetry.enabled": false,
 
 	"window.zoomLevel": 1,
