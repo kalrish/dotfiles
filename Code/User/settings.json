@@ -11,6 +11,8 @@
 
 	"redhat.telemetry.enabled": false,
 
+	"window.zoomLevel": 1,
+
 	"workbench.colorTheme": "Default High Contrast",
 
 }
