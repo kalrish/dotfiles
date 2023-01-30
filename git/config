@@ -4,7 +4,7 @@
 	gpgSign = true
 
 [core]
-	editor = vim
+	editor = nvim
 	pager = less --no-init --quit-if-one-screen
 
 [credential]
