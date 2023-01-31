@@ -39,6 +39,11 @@
 	defaultBranch = trunk
 
 
+[log]
+
+	showSignature = true
+
+
 [pager]
 
 	diff = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
