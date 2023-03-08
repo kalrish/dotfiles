@@ -1,3 +1,7 @@
 ---
 
 # man:glab-config(1)
+
+
+# Open Neovim as editor for issues and merge requests, among other things.
+editor: nvim
