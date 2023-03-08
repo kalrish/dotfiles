@@ -16,6 +16,9 @@
 	required = true
 	smudge = git-lfs smudge -- %f
 
+[gpg]
+	format = openpgp
+
 [init]
 	defaultBranch = trunk
 
