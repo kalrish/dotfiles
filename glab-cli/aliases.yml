@@ -6,3 +6,7 @@
 
 
 ---
+
+ci: pipeline ci
+
+co: mr checkout
