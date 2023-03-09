@@ -55,6 +55,8 @@
 
 [push]
 
+	autoSetupRemote = yes
+
 	gpgSign = if-asked
 
 
