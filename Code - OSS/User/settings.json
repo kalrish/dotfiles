@@ -134,6 +134,10 @@
 		"!Split sequence",
 	],
 
+	"[javascript]": {
+		"editor.insertSpaces": false,
+	},
+
 	"[python]": {
 		"editor.insertSpaces": false,
 	},
