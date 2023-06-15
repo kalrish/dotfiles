@@ -133,4 +133,8 @@
 		"!Split",
 		"!Split sequence",
 	],
+
+	"[python]": {
+		"editor.insertSpaces": false,
+	},
 }
