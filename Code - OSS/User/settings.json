@@ -137,4 +137,8 @@
 	"[python]": {
 		"editor.insertSpaces": false,
 	},
+
+	"[typescript]": {
+		"editor.insertSpaces": false,
+	},
 }
