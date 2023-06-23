@@ -4,6 +4,8 @@
 
 	"explorer.confirmDelete": false,
 
+	"files.insertFinalNewline": true,
+
 	/*
 		The source code for Jedi is open.
 		The source code for Pylance is closed, and only Visual Studio Code can use Pylance;
