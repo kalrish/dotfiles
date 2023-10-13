@@ -45,6 +45,7 @@
 
 [user]
 	name = David Joaquín Shourabi Porcel
+	useConfigOnly = true
 
 [include]
 	path = personal
