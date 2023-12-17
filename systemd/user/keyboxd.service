@@ -1,0 +1,8 @@
+[Unit]
+Description=GnuPG key database daemon
+Requires=keyboxd.socket
+
+[Service]
+ExecStart=/usr/lib/gnupg/keyboxd --verbose
+StandardInput=socket
+Type=exec
