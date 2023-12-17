@@ -1,0 +1,5 @@
+[Socket]
+# FIXME: Use a native systemd specifier for ${XDG_DATA_HOME} instead of hardcoding ~/.local/share
+ListenFIFO=%h/.local/share/bash-completion/completions/%i
+
+#ListenStream=%h/.local/share/bash-completion/completions/%i
