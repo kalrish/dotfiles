@@ -1,0 +1,5 @@
+[Unit]
+Description=GnuPG key database daemon
+
+[Socket]
+ListenStream=%t/gnupg/S.keyboxd
