@@ -11,6 +11,10 @@
 
 	"explorer.confirmDelete": false,
 
+	"markdown.preview.scrollEditorWithPreview": false,
+
+	"markdown.preview.scrollPreviewWithEditor": false,
+
 	// The source code for Pylance is closed, and only Visual Studio Code can use it; Code OSS cannot.
 	// The source code for Jedi is open and Code OSS can use it.
 	"python.languageServer": "Jedi",

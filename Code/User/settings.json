@@ -11,6 +11,10 @@
 
 	"explorer.confirmDelete": false,
 
+	"markdown.preview.scrollEditorWithPreview": false,
+
+	"markdown.preview.scrollPreviewWithEditor": false,
+
 	"redhat.telemetry.enabled": false,
 
 	"window.zoomLevel": 1,
