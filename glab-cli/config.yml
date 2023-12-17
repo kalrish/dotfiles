@@ -15,5 +15,9 @@ hosts:
         api_protocol: https
         user: djsp
 
+    gitlab.freedesktop.org:
+        api_protocol: https
+        user: djsp
+
 # default GitLab instance
 host: gitlab.com
