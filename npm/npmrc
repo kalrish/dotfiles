@@ -3,3 +3,18 @@
 
 # SPDX-FileCopyrightText: © 2025 David Joaquín Shourabi Porcel <https://www.djsp.eu/>
 # SPDX-License-Identifier: AGPL-3.0-only
+
+
+cache = ${HOME}/.cache/npm
+
+engine-strict = true
+
+foreground-scripts = true
+
+init-author-email = david@djsp.eu
+init-author-name = David Joaquín Shourabi Porcel
+init-author-url = https://www.djsp.eu/
+
+init-version = 0.0.0
+
+init-module = ${HOME}/.config/npm/init.js
