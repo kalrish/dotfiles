@@ -1,0 +1,3 @@
+[org/gnome/desktop/wm/keybindings]
+switch-applications=['<Super>Tab']
+switch-windows=['<Alt>Tab']
