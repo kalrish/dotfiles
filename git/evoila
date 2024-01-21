@@ -1,6 +1,11 @@
 # man:git-config(1)
 
 
+[commit]
+
+	template = ~/.config/git/commit-message-templates/evoila
+
+
 [init]
 
 	defaultBranch = main
