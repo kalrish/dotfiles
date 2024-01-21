@@ -3,3 +3,6 @@
 
 # The Bitwarden desktop application stores garbage here:
 /Bitwarden/
+
+# Signal desktop app
+/Signal/
