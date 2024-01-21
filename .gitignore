@@ -1,1 +1,5 @@
 # man:gitignore(5)
+
+
+# The Bitwarden desktop application stores garbage here:
+/Bitwarden/
