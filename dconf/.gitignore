@@ -1,0 +1,4 @@
+# man:gitignore(5)
+
+
+/settings.txt-lock
