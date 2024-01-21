@@ -1,0 +1,25 @@
+/Backups/
+/blob_storage/
+/Cache/
+/CachedData/
+/CachedExtensionVSIXs/
+/CachedExtensions/
+/CachedProfilesData/
+/Code Cache/
+/Cookies
+/Cookies-journal
+/Crashpad/
+/databases/
+/DawnCache/
+/Dictionaries/
+/GPUCache/
+/languagepacks.json
+/Local Storage/
+/logs/
+/machineid
+/Network Persistent State
+/Preferences
+/Service Worker/
+/Session Storage/
+/TransportSecurity
+/WebStorage/
