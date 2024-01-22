@@ -1,0 +1,3 @@
+# gitignore(5)
+
+# Some applications store garbage in `XDG_CONFIG_HOME`.
