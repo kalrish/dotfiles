@@ -6,5 +6,8 @@
 # Bitwarden desktop app
 /Bitwarden/
 
+# Chromium web browser
+/chromium/
+
 # Signal desktop app
 /Signal/
