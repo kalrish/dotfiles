@@ -12,6 +12,9 @@ use-system-font=true
 timers=[{'duration': <8520>, 'name': <'Maschinenwäsche bei 40 ℃'>}, {'duration': <8700>, 'name': <'Maschinenwäsche bei 60 ℃'>}, {'duration': <7800>, 'name': <'Pflegeleicht bei 30 ℃'>}, {'duration': <3600>, 'name': <'Wolle'>}, {'duration': <900>, 'name': <'covid-19 test'>}]
 world-clocks=[{'location': <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>}, {'location': <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>}, {'location': <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>}]
 
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'es')]
+
 [org/gnome/desktop/wm/keybindings]
 switch-applications=['<Super>Tab']
 switch-windows=['<Alt>Tab']
