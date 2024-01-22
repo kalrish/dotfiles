@@ -7,5 +7,9 @@
 # Chromium web browser
 /chromium/
 
+# dLeyna
+/dleyna-renderer-service.conf
+/dleyna-server-service.conf
+
 # Signal desktop app
 /Signal/
