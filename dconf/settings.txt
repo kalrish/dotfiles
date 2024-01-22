@@ -15,6 +15,9 @@ world-clocks=[{'location': <(uint32 2, <('New York', 'KNYC', true, [(0.711803440
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'es'), ('xkb', 'us')]
 
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+
 [org/gnome/desktop/wm/keybindings]
 switch-applications=['<Super>Tab']
 switch-windows=['<Alt>Tab']
