@@ -16,6 +16,7 @@ world-clocks=[{'location': <(uint32 2, <('New York', 'KNYC', true, [(0.711803440
 sources=[('xkb', 'es'), ('xkb', 'us')]
 
 [org/gnome/desktop/interface]
+clock-show-weekday=true
 color-scheme='prefer-dark'
 
 [org/gnome/desktop/wm/keybindings]
