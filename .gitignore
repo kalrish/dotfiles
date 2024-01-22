@@ -11,5 +11,8 @@
 /dleyna-renderer-service.conf
 /dleyna-server-service.conf
 
+# GNU Image Manipulation Program
+/GIMP/
+
 # Signal desktop app
 /Signal/
