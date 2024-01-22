@@ -4,5 +4,8 @@
 # The Bitwarden desktop application stores garbage here:
 /Bitwarden/
 
+# Chromium web browser
+/chromium/
+
 # Signal desktop app
 /Signal/
