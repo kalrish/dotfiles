@@ -26,5 +26,8 @@ switch-windows=['<Alt>Tab']
 [org/gnome/shell/world-clocks]
 locations=[<(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>, <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>, <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>]
 
+[org/gnome/shell]
+welcome-dialog-last-shown-version='45.3'
+
 [org/gnome/software]
 first-run=false
