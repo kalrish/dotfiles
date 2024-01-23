@@ -33,4 +33,5 @@ welcome-dialog-last-shown-version='45.3'
 first-run=false
 
 [org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
