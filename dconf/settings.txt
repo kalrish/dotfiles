@@ -38,4 +38,7 @@ sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell/weather]
 automatic-location=true
-locations=@av []
+locations=[<(uint32 2, <('Hamburg', 'EDDH', true, [(0.93607824966852793, 0.17453292519943295)], [(0.93462381444296339, 0.17453292519943295)])>)>]
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Hamburg', 'EDDH', true, [(0.93607824966852793, 0.17453292519943295)], [(0.93462381444296339, 0.17453292519943295)])>)>]
