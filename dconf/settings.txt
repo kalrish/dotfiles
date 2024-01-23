@@ -35,3 +35,7 @@ first-run=false
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=@av []
