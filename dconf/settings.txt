@@ -45,3 +45,6 @@ locations=[<(uint32 2, <('Hamburg', 'EDDH', true, [(0.93607824966852793, 0.17453
 
 [org/gnome/desktop/session]
 idle-delay=uint32 300
+
+[org/gnome/tweaks]
+show-extensions-notice=false
