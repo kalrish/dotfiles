@@ -31,3 +31,6 @@ welcome-dialog-last-shown-version='45.3'
 
 [org/gnome/software]
 first-run=false
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-type='nothing'
