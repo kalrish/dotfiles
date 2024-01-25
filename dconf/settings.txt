@@ -53,3 +53,4 @@ show-extensions-notice=false
 
 [org/gabmus/gfeeds]
 default-view='reader'
+max-article-age-days=180
