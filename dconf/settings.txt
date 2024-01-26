@@ -32,6 +32,7 @@ locations=[<(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.290
 welcome-dialog-last-shown-version='45.3'
 
 [org/gnome/software]
+download-updates=false
 first-run=false
 
 [org/gnome/settings-daemon/plugins/power]
