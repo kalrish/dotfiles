@@ -26,7 +26,7 @@
 	showSignature = true
 
 [merge]
-	verifySignatures = yes
+	verifySignatures = no
 
 [pager]
 	diff = /usr/share/git/diff-highlight/diff-highlight | less --no-init --quit-if-one-screen
