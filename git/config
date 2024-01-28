@@ -49,7 +49,7 @@
 
 [merge]
 
-	verifySignatures = yes
+	verifySignatures = no
 
 
 [pager]
