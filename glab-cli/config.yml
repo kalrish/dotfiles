@@ -5,3 +5,5 @@
 
 # Open Neovim as editor for issues and merge requests, among other things.
 editor: nvim
+
+git_protocol: ssh
