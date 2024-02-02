@@ -7,3 +7,10 @@
 editor: nvim
 
 git_protocol: ssh
+
+# configuration settings for GitLab instances
+hosts:
+
+    gitlab.com:
+        api_protocol: https
+        user: djsp
