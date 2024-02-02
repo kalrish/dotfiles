@@ -11,6 +11,10 @@ git_protocol: ssh
 # configuration settings for GitLab instances
 hosts:
 
+    gitlab.archlinux.org:
+        api_protocol: https
+        user: djsp
+
     gitlab.com:
         api_protocol: https
         user: djsp
