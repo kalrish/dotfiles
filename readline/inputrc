@@ -1,2 +1,4 @@
 # man:readline(3)
 
+
+set completion-ignore-case On
