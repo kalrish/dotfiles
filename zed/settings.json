@@ -4,4 +4,7 @@
 // formatted as JSON with comments
 
 {
+	"theme": {
+		"mode": "system",
+	},
 }
