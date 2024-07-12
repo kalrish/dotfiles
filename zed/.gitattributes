@@ -1,0 +1,5 @@
+# man:gitattributes(5)
+
+
+# Zed allows comments in its JSON configuration files
+/*.json linguist-language=JSON-with-Comments
