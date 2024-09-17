@@ -21,5 +21,9 @@
 /Preferences
 /Service Worker/
 /Session Storage/
+/Shared Dictionary/
+/SharedStorage
 /TransportSecurity
+/Trust Tokens
+/Trust Tokens-journal
 /WebStorage/
