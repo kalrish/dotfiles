@@ -44,6 +44,8 @@
 
 [log]
 
+	date = iso
+
 	showSignature = true
 
 
