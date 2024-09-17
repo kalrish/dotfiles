@@ -14,5 +14,8 @@
 # GNU Image Manipulation Program
 /GIMP/
 
+# GNOME monitor configuration
+/monitors.xml
+
 # Signal desktop app
 /Signal/
