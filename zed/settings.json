@@ -4,6 +4,7 @@
 // formatted as JSON with comments
 
 {
+	"buffer_font_size": 16,
 	"theme": {
 		"dark": "Atelier Cave Dark",
 		"light": "One Light",
