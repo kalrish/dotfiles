@@ -1,4 +1,6 @@
 # man:gitignore(5)
 
 
-/settings.txt-lock
+# By default, dconf creates a binary database file called `user`.
+# man:dconf(7)
+/user
