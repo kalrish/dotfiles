@@ -6,6 +6,7 @@
 {
 	"theme": {
 		"dark": "Atelier Cave Dark",
+		"light": "One Light",
 		"mode": "system",
 	},
 }
