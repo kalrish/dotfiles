@@ -92,6 +92,7 @@ _must_update_git_prompt=1
 # man:tput(1)
 _term_color_foreground_blue="$(tput -- setaf 4)"
 _term_color_foreground_green="$(tput -- setaf 2)"
+_term_color_foreground_orange="$(tput -- setaf 208)"
 _term_reset="$(tput -- sgr0)"
 
 # Save every command that does not begin with a space character in the history list.
@@ -154,7 +155,7 @@ PROMPT_COMMAND=(
 # info:(bash)Interactive_Shell_Behavior
 # info:(bash)Shell_Parameter_Expansion
 # info:(bash)Special_Parameters
-PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\w\${_git_branch:+ \${_git_branch}}\\n\\A \${_exit_code_padding:\${#?}}\${?} \\[${_term_color_foreground_blue}\\]\\\$\\[${_term_reset}\\] "
+PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\w\${_git_branch:+ \${_git_branch}}\\n\\[${_term_color_foreground_orange}\\]\\A\\[${_term_reset}\\] \${_exit_code_padding:\${#?}}\${?} \\[${_term_color_foreground_blue}\\]\\\$\\[${_term_reset}\\] "
 
 # Prevent changes to variables that:
 #
@@ -178,6 +179,7 @@ unset \
 	-- \
 	_term_color_foreground_blue \
 	_term_color_foreground_green \
+	_term_color_foreground_orange \
 	_term_reset \
 	#
 
