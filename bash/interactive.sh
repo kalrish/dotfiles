@@ -203,6 +203,18 @@ unset \
 	_term_typeface_bold \
 	#
 
+# Enable completion for AWS CLI.
+#
+# info:(bash)Programmable_Completion
+if command_available aws_completer
+then
+	complete \
+		-C aws_completer \
+		-- \
+		aws \
+		#
+fi
+
 # Execute the function `_trap_debug` before every command.
 trap \
 	-- \
