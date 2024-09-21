@@ -21,6 +21,12 @@ shopt \
 	histappend \
 	#
 
+# Save every command that does not begin with a space character in the history list.
+#
+# info:(bash)Bash_Variables
+# info:(bash)Bash_History_Facilities
+HISTCONTROL=ignorespace
+
 # Let the history file grow indefinitely.
 #
 # info:(bash)Bash_Variables
@@ -48,6 +54,7 @@ HISTTIMEFORMAT='%FT%T%z '
 # - were not marked read-only already.
 readonly \
 	-- \
+	HISTCONTROL \
 	HISTFILESIZE \
 	HISTSIZE \
 	HISTTIMEFORMAT \
