@@ -86,6 +86,13 @@ declare \
 _exit_code_padding='   '
 _must_update_git_prompt=1
 
+# Give them nice names.
+#
+# man:tput(1p)
+# man:tput(1)
+_term_color_foreground_green="$(tput -- setaf 2)"
+_term_reset="$(tput -- sgr0)"
+
 # Save every command that does not begin with a space character in the history list.
 #
 # info:(bash)Bash_Variables
@@ -146,7 +153,7 @@ PROMPT_COMMAND=(
 # info:(bash)Interactive_Shell_Behavior
 # info:(bash)Shell_Parameter_Expansion
 # info:(bash)Special_Parameters
-PS1='\u@\H \w${_git_branch:+ ${_git_branch}}\n\A ${_exit_code_padding:${#?}}${?} \$ '
+PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\w\${_git_branch:+ \${_git_branch}}\\n\\A \${_exit_code_padding:\${#?}}\${?} \\\$ "
 
 # Prevent changes to variables that:
 #
@@ -162,6 +169,14 @@ readonly \
 	HISTTIMEFORMAT \
 	PS1 \
 	_exit_code_padding \
+	#
+
+# Unset variables that aren't needed anymore.
+unset \
+	-v \
+	-- \
+	_term_color_foreground_green \
+	_term_reset \
 	#
 
 # Execute the function `_trap_debug` before every command.
