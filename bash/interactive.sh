@@ -27,6 +27,12 @@ shopt \
 # info:(bash)Bash_History_Facilities
 HISTFILESIZE=-1
 
+# Let the in-memory history list grow indefinitely.
+#
+# info:(bash)Bash_Variables
+# info:(bash)Bash_History_Facilities
+HISTSIZE=-1
+
 # Prevent changes to variables that:
 #
 # - are supposed to stay set, either because they are needed or because they have some effect on the shell; and
@@ -35,4 +41,5 @@ HISTFILESIZE=-1
 readonly \
 	-- \
 	HISTFILESIZE \
+	HISTSIZE \
 	#
