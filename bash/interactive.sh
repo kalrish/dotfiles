@@ -61,7 +61,8 @@ HISTTIMEFORMAT='%FT%T%z '
 # - the user's name (`\u`);
 # - whether they are root (`\$`);
 # - the hostname (`\H`);
-# - the current working directory (`\w`); and
+# - the current working directory (`\w`);
+# - the time in 24-hour HH:MM format (`\A`); and
 # - the exit code of the last command (`${?}`), padded with spaces to the width of three characters.
 #
 # This information is split into two lines, with elements that may be long, such as the hostname, or whose length may vary, such as the working directory, in the first line.
@@ -71,7 +72,7 @@ HISTTIMEFORMAT='%FT%T%z '
 # info:(bash)Interactive_Shell_Behavior
 # info:(bash)Shell_Parameter_Expansion
 # info:(bash)Special_Parameters
-PS1='\u@\H \w\n${_exit_code_padding:${#?}}${?} \$ '
+PS1='\u@\H \w\n\A ${_exit_code_padding:${#?}}${?} \$ '
 
 # Prevent changes to variables that:
 #
