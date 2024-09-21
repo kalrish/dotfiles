@@ -27,6 +27,13 @@ shopt \
 # info:(bash)Bash_History_Facilities
 HISTCONTROL=ignorespace
 
+# Keep the history file in the directory designated by the XDG Base Directory specification for user-specific state data.
+#
+# info:(bash)Bash_Variables
+# info:(bash)Bash_History_Facilities
+# https://specifications.freedesktop.org/basedir-spec/latest/
+HISTFILE="${XDG_STATE_HOME:-${HOME}/.local/state}/bash/history"
+
 # Let the history file grow indefinitely.
 #
 # info:(bash)Bash_Variables
@@ -55,6 +62,7 @@ HISTTIMEFORMAT='%FT%T%z '
 readonly \
 	-- \
 	HISTCONTROL \
+	HISTFILE \
 	HISTFILESIZE \
 	HISTSIZE \
 	HISTTIMEFORMAT \
