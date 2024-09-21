@@ -1,6 +1,17 @@
 # This script shall be executed by POSIX shells at startup.
 
 
+# This function is defined for non-interactive shells because it might be needed to set up the environment of non-interactive sessions too.
+# This function is named without the underscore prefix because I may call it myself.
+command_available ()
+{
+	command \
+		-v \
+		-- \
+		"${1}" \
+		#
+} > /dev/null 2> /dev/null
+
 # Have the AWS CLI load its "less sensitive configuration options" from a file in the directory designated by the XDG Base Directory specification for user-specific configuration files.
 #
 # https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files#cli-configure-files-where
