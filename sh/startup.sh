@@ -13,15 +13,23 @@ AWS_CONFIG_FILE="${XDG_CONFIG_HOME:-${HOME}/.config}/aws/config.ini"
 # man:dpkg-sig(1)
 DEBSIGN_KEYID=E0C3497126B72CA47975FC322953BB8C16043B43
 
+# Have the Kubernetes command line tool (`kubectl`) and other Kubernetes clients load a kubeconfig file from the directory designated by the XDG Base Directory specification for user-specific configuration files.
+#
+# https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
+# https://specifications.freedesktop.org/basedir-spec/latest/
+KUBECONFIG="${XDG_CONFIG_HOME:-${HOME}/.config}/k8s/config.yaml"
+
 # Prevent changes to variables that are meant to stay set after this script is executed but should not be modified by accident.
 readonly \
 	-- \
 	AWS_CONFIG_FILE \
 	DEBSIGN_KEYID \
+	KUBECONFIG \
 	#
 
 export \
 	-- \
 	AWS_CONFIG_FILE \
 	DEBSIGN_KEYID \
+	KUBECONFIG \
 	#
