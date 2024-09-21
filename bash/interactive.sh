@@ -57,13 +57,16 @@ HISTTIMEFORMAT='%FT%T%z '
 # Show the following information in the primary prompt:
 #
 # - the user's name (`\u`);
-# - whether they are root (`\$`); and
-# - the hostname (`\H`).
+# - whether they are root (`\$`);
+# - the hostname (`\H`); and
+# - the current working directory (`\w`).
+#
+# This information is split into two lines, with elements that may be long, such as the hostname, or whose length may vary, such as the working directory, in the first line.
 #
 # info:(bash)Bourne_Shell_Variables
 # info:(bash)Controlling_the_Prompt
 # info:(bash)Interactive_Shell_Behavior
-PS1='\u@\H \$ '
+PS1='\u@\H \w\n\$ '
 
 # Prevent changes to variables that:
 #
