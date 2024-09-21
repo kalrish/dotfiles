@@ -54,6 +54,13 @@ HISTSIZE=-1
 # man:strftime(3)
 HISTTIMEFORMAT='%FT%T%z '
 
+# Show only whether Bash is running as the root user (`\$`) in the primary prompt.
+#
+# info:(bash)Bourne_Shell_Variables
+# info:(bash)Controlling_the_Prompt
+# info:(bash)Interactive_Shell_Behavior
+PS1='\$ '
+
 # Prevent changes to variables that:
 #
 # - are supposed to stay set, either because they are needed or because they have some effect on the shell; and
@@ -66,4 +73,5 @@ readonly \
 	HISTFILESIZE \
 	HISTSIZE \
 	HISTTIMEFORMAT \
+	PS1 \
 	#
