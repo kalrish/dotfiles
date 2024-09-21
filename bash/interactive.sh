@@ -33,6 +33,12 @@ HISTFILESIZE=-1
 # info:(bash)Bash_History_Facilities
 HISTSIZE=-1
 
+# Keep track of when each command was executed in the history file.
+#
+# info:(bash)Bash_Variables
+# info:(bash)Bash_History_Facilities
+HISTTIMEFORMAT=
+
 # Prevent changes to variables that:
 #
 # - are supposed to stay set, either because they are needed or because they have some effect on the shell; and
@@ -42,4 +48,5 @@ readonly \
 	-- \
 	HISTFILESIZE \
 	HISTSIZE \
+	HISTTIMEFORMAT \
 	#
