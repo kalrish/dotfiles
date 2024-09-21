@@ -155,7 +155,7 @@ PROMPT_COMMAND=(
 # info:(bash)Interactive_Shell_Behavior
 # info:(bash)Shell_Parameter_Expansion
 # info:(bash)Special_Parameters
-PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\w\${_git_branch:+ \${_git_branch}}\\n\\[${_term_color_foreground_orange}\\]\\A\\[${_term_reset}\\] \${_exit_code_padding:\${#?}}\${?} \\[${_term_color_foreground_blue}\\]\\\$\\[${_term_reset}\\] "
+PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\[${_term_color_foreground_blue}\\]\\w\\[${_term_reset}\\]\${_git_branch:+ \${_git_branch}}\\n\\[${_term_color_foreground_orange}\\]\\A\\[${_term_reset}\\] \${_exit_code_padding:\${#?}}\${?} \\[${_term_color_foreground_blue}\\]\\\$\\[${_term_reset}\\] "
 
 # Prevent changes to variables that:
 #
