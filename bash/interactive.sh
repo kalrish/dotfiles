@@ -21,6 +21,8 @@ shopt \
 	histappend \
 	#
 
+_exit_code_padding='   '
+
 # Save every command that does not begin with a space character in the history list.
 #
 # info:(bash)Bash_Variables
@@ -58,15 +60,18 @@ HISTTIMEFORMAT='%FT%T%z '
 #
 # - the user's name (`\u`);
 # - whether they are root (`\$`);
-# - the hostname (`\H`); and
-# - the current working directory (`\w`).
+# - the hostname (`\H`);
+# - the current working directory (`\w`); and
+# - the exit code of the last command (`${?}`), padded with spaces to the width of three characters.
 #
 # This information is split into two lines, with elements that may be long, such as the hostname, or whose length may vary, such as the working directory, in the first line.
 #
 # info:(bash)Bourne_Shell_Variables
 # info:(bash)Controlling_the_Prompt
 # info:(bash)Interactive_Shell_Behavior
-PS1='\u@\H \w\n\$ '
+# info:(bash)Shell_Parameter_Expansion
+# info:(bash)Special_Parameters
+PS1='\u@\H \w\n${_exit_code_padding:${#?}}${?} \$ '
 
 # Prevent changes to variables that:
 #
@@ -81,4 +86,5 @@ readonly \
 	HISTSIZE \
 	HISTTIMEFORMAT \
 	PS1 \
+	_exit_code_padding \
 	#
