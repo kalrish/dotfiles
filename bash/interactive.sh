@@ -92,6 +92,7 @@ _must_update_git_prompt=1
 # man:tput(1)
 _term_color_foreground_blue="$(tput -- setaf 4)"
 _term_color_foreground_green="$(tput -- setaf 2)"
+_term_color_foreground_grey="$(tput -- setaf 243)"
 _term_color_foreground_orange="$(tput -- setaf 208)"
 _term_color_foreground_red="$(tput -- setaf 1)"
 _term_reset="$(tput -- sgr0)"
@@ -164,6 +165,13 @@ PROMPT_COMMAND=(
 # info:(bash)Special_Parameters
 PS1="\\[${_term_typeface_bold}${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\[${_term_typeface_bold}${_term_color_foreground_blue}\\]\\w\\[${_term_reset}\\]\${_git_branch:+ \\[${_term_typeface_bold}${_term_color_foreground_red}\\]\${_git_branch}\\[${_term_reset}\\]}\\n\\[${_term_typeface_bold}${_term_color_foreground_orange}\\]\\A\\[${_term_reset}\\] \\[\${_exit_code_formats[((\${?}!=0))]}\\]\${_exit_code_padding:\${#?}}\${?}\\[${_term_reset}\\] \\[${_term_typeface_bold}${_term_color_foreground_blue}\\]\\\$\\[${_term_reset}\\] "
 
+# Color the default secondary prompt grey.
+#
+# info:(bash)Bourne_Shell_Variables
+# info:(bash)Controlling_the_Prompt
+# info:(bash)Interactive_Shell_Behavior
+PS2="\\[${_term_color_foreground_grey}\\]>\\[${_term_reset}\\] "
+
 # Prevent changes to variables that:
 #
 # - are supposed to stay set, either because they are needed or because they have some effect on the shell; and
@@ -177,6 +185,7 @@ readonly \
 	HISTSIZE \
 	HISTTIMEFORMAT \
 	PS1 \
+	PS2 \
 	_exit_code_formats \
 	_exit_code_padding \
 	#
@@ -187,6 +196,7 @@ unset \
 	-- \
 	_term_color_foreground_blue \
 	_term_color_foreground_green \
+	_term_color_foreground_grey \
 	_term_color_foreground_orange \
 	_term_color_foreground_red \
 	_term_reset \
