@@ -90,6 +90,7 @@ _must_update_git_prompt=1
 #
 # man:tput(1p)
 # man:tput(1)
+_term_color_foreground_blue="$(tput -- setaf 4)"
 _term_color_foreground_green="$(tput -- setaf 2)"
 _term_reset="$(tput -- sgr0)"
 
@@ -153,7 +154,7 @@ PROMPT_COMMAND=(
 # info:(bash)Interactive_Shell_Behavior
 # info:(bash)Shell_Parameter_Expansion
 # info:(bash)Special_Parameters
-PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\w\${_git_branch:+ \${_git_branch}}\\n\\A \${_exit_code_padding:\${#?}}\${?} \\\$ "
+PS1="\\[${_term_color_foreground_green}\\]\\u@\\H\\[${_term_reset}\\] \\w\${_git_branch:+ \${_git_branch}}\\n\\A \${_exit_code_padding:\${#?}}\${?} \\[${_term_color_foreground_blue}\\]\\\$\\[${_term_reset}\\] "
 
 # Prevent changes to variables that:
 #
@@ -175,6 +176,7 @@ readonly \
 unset \
 	-v \
 	-- \
+	_term_color_foreground_blue \
 	_term_color_foreground_green \
 	_term_reset \
 	#
