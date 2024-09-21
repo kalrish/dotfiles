@@ -26,6 +26,13 @@ KUBECONFIG="${HOME}/.kube/config:${XDG_CONFIG_HOME:-${HOME}/.config}/k8s/config.
 # https://specifications.freedesktop.org/basedir-spec/latest/
 npm_config_userconfig="${XDG_CONFIG_HOME:-${HOME}/.config}/npm/npmrc"
 
+# Have GNU core utilities (coreutils) format dates according to RFC 3339 by default,
+# separating dates and times with a space instead of a 'T' for better readability.
+#
+# info:(coreutils)Formatting_file_timestamps
+# info:(coreutils)Date_format_specifiers
+TIME_STYLE='+%F %T%:z'
+
 # Prevent changes to variables that are meant to stay set after this script is executed but should not be modified by accident.
 readonly \
 	-- \
@@ -33,6 +40,7 @@ readonly \
 	DEBSIGN_KEYID \
 	KUBECONFIG \
 	npm_config_userconfig \
+	TIME_STYLE \
 	#
 
 export \
@@ -41,4 +49,5 @@ export \
 	DEBSIGN_KEYID \
 	KUBECONFIG \
 	npm_config_userconfig \
+	TIME_STYLE \
 	#
