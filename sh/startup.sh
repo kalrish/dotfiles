@@ -44,6 +44,22 @@ npm_config_userconfig="${XDG_CONFIG_HOME:-${HOME}/.config}/npm/npmrc"
 # info:(coreutils)Date_format_specifiers
 TIME_STYLE='+%F %T%:z'
 
+if command_available gpgconf
+then
+	# Have OpenSSH use `gpg-agent` as authentication agent if available.
+	# This enables the usage of OpenPGP authentication subkeys as SSH keys.
+	#
+	# man:ssh(1)
+	# info:(gnupg)gpgconf
+	SSH_AUTH_SOCK="$(
+		gpgconf \
+			--list-dirs \
+			-- \
+			agent-ssh-socket \
+			#
+	)"
+fi
+
 # Prevent changes to variables that are meant to stay set after this script is executed but should not be modified by accident.
 readonly \
 	-- \
@@ -51,6 +67,7 @@ readonly \
 	DEBSIGN_KEYID \
 	KUBECONFIG \
 	npm_config_userconfig \
+	SSH_AUTH_SOCK \
 	TIME_STYLE \
 	#
 
@@ -60,5 +77,6 @@ export \
 	DEBSIGN_KEYID \
 	KUBECONFIG \
 	npm_config_userconfig \
+	SSH_AUTH_SOCK \
 	TIME_STYLE \
 	#
