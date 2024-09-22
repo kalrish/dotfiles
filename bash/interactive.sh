@@ -34,10 +34,12 @@ HISTFILESIZE=-1
 HISTSIZE=-1
 
 # Keep track of when each command was executed in the history file.
+# Display dates in history listings according to ISO 8061.
 #
 # info:(bash)Bash_Variables
 # info:(bash)Bash_History_Facilities
-HISTTIMEFORMAT=
+# man:strftime(3)
+HISTTIMEFORMAT='%FT%T%z '
 
 # Prevent changes to variables that:
 #
