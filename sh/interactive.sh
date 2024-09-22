@@ -11,6 +11,16 @@ set \
 	-o ignoreeof \
 	#
 
+_qless ()
+{
+	"${1}" \
+		. \
+		-- \
+		${2+"${2}"} \
+	|
+	"${PAGER:-less}"
+}
+
 # Have the GNU Readline library load its initialization file from the directory designated by the XDG Base Directory specification for user-specific configuration files.
 #
 # man:readline(3)
@@ -22,6 +32,15 @@ readonly \
 	-- \
 	INPUTRC \
 	#
+
+if command_available jq
+then
+	alias jqless='_qless jq'
+fi
+if command_available yq
+then
+	alias yqless='_qless yq'
+fi
 
 export \
 	-- \
