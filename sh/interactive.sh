@@ -21,6 +21,34 @@ _qless ()
 	"${PAGER:-less}"
 }
 
+mkcd ()
+{
+	if test -n "${1}"
+	then
+		# Create the directory and any missing intermediate components.
+		#
+		# man:mkdir(1p)
+		mkdir \
+			-p \
+			-- \
+			"${1}" \
+			#
+
+		# Change into it.
+		#
+		# man:cd(1p)
+		#
+		# If `cd` fails, the function will return its exit code.
+		# shellcheck disable=SC2164
+		cd \
+			-- \
+			"${1}" \
+			#
+	else
+		return 1
+	fi
+}
+
 # Have the GNU Readline library load its initialization file from the directory designated by the XDG Base Directory specification for user-specific configuration files.
 #
 # man:readline(3)
