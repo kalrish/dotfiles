@@ -215,6 +215,17 @@ then
 		#
 fi
 
+# Load bash-completion if available.
+#
+# Some distributions have Bash execute `/etc/bash.bashrc` when started as an interactive shell and `/etc/bash.bashrc` load bash-completion if it is installed.
+# Loading bash-completion from the user startup scripts renders them more portable by removing a dependency on the operating system.
+#
+# https://github.com/scop/bash-completion
+if [[ -r /usr/share/bash-completion/bash_completion ]]
+then
+	source /usr/share/bash-completion/bash_completion
+fi
+
 # Execute the function `_trap_debug` before every command.
 trap \
 	-- \
