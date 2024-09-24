@@ -15,8 +15,10 @@ function
 {
 	local \
 		-- \
+		state_data_directory \
 		this_script_directory_path \
 		this_script_file_path \
+		xdg_state_home \
 		#
 
 	# Get a path to this script file.
@@ -51,8 +53,33 @@ function
 	# man:zshexpn(1)
 	this_script_directory_path="${this_script_file_path:h}"
 
+	# This is the directory designated by the XDG Base Directory specification to store user-specific state data such as the history file.
+	#
+	# https://specifications.freedesktop.org/basedir-spec/latest/
+	xdg_state_home="${XDG_STATE_HOME:-${HOME}/.local/state}"
+
+	state_data_directory="${xdg_state_home}/zsh"
+
 	# Execute startup script for interactive POSIX shells.
 	. \
 		"${this_script_directory_path}/../sh/interactive.sh" \
 		#
+
+	# Create the directory for user-specific state data if it does not exist already.
+	#
+	# man:zshmisc(1)
+	# man:mkdir(1p)
+	if [[ ! -e "${state_data_directory}" ]]
+	then
+		mkdir \
+			-p \
+			-- \
+			"${state_data_directory}" \
+			#
+	fi
+
+	# Keep the history file in the directory designated by the XDG Base Directory specification for user-specific state data.
+	#
+	# man:zshparam(1)
+	HISTFILE="${state_data_directory}/history"
 }
