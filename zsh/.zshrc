@@ -99,6 +99,13 @@ function
 	# man:zshparam(1)
 	HISTFILE="${state_data_directory}/history"
 
+	# Remember as many commands per session as the maximum value of a 32-bit signed integer type.
+	#
+	# Zsh likely uses either such a type or a larger one internally.
+	#
+	# man:zshparam(1)
+	HISTSIZE="$((maximum_value_32bit_integer))"
+
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
 	# Zsh likely uses either such a type or a larger one internally.
