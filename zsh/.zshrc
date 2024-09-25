@@ -19,6 +19,14 @@ setopt \
 	EXTENDED_HISTORY \
 	#
 
+# Save each invoked command to the history file after the command finishes.
+#
+# man:zshoptions(1)
+setopt \
+	-o \
+	INC_APPEND_HISTORY_TIME \
+	#
+
 # Scope variables not needed beyond this script to it.
 #
 # From the manual page:
