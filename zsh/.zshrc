@@ -153,14 +153,17 @@ function
 	# Show the following information in the primary prompt:
 	#
 	# - the user's name (`%n`);
-	# - whether Zsh is running "with privileges" (`%#`) in the primary prompt; and
-	# - the hostname (`%M`).
+	# - whether Zsh is running "with privileges" (`%#`) in the primary prompt;
+	# - the hostname (`%M`); and
+	# - the current working directory (`%d`).
+	#
+	# This information is split into two lines, with elements that may be long or whose length may vary in the first line.
 	#
 	# Zsh considers itself as running "with privileges" if "either the effective user ID is zero, or, if POSIX.1e capabilities are supported, […] at least one capability is raised in either the Effective or Inheritable capability vectors".
 	#
 	# man:zshparam(1)
 	# man:zshmisc(1)
-	PS1='%n@%M %# '
+	PS1=$'%n@%M %d\n%# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
