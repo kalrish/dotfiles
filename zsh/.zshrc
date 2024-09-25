@@ -3,6 +3,14 @@
 # man:zsh(1)
 
 
+# Append to the history file instead of overwriting it.
+#
+# man:zshoptions(1)
+setopt \
+	-o \
+	APPEND_HISTORY \
+	#
+
 # Scope variables not needed beyond this script to it.
 #
 # From the manual page:
