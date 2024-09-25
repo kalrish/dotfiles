@@ -19,6 +19,16 @@ setopt \
 	EXTENDED_HISTORY \
 	#
 
+# Acquire locks with `fcntl` when writing to the history file.
+#
+# man:zshoptions(1)
+# man:fcntl(3p)
+# man:fcntl(2)
+setopt \
+	-o \
+	HIST_FCNTL_LOCK \
+	#
+
 # Save each invoked command to the history file after the command finishes.
 #
 # man:zshoptions(1)
