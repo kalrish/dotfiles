@@ -11,6 +11,14 @@ setopt \
 	APPEND_HISTORY \
 	#
 
+# Keep track of when each command was executed and how long it took in the history file.
+#
+# man:zshoptions(1)
+setopt \
+	-o \
+	EXTENDED_HISTORY \
+	#
+
 # Scope variables not needed beyond this script to it.
 #
 # From the manual page:
