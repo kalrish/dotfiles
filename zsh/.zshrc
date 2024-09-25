@@ -44,6 +44,15 @@ setopt \
 	HIST_IGNORE_SPACE \
 	#
 
+# Split words read from the history file "in a similar fashion to normal shell command line handling".
+# In particular, do not split words read from the history file on quoted whitespace.
+#
+# man:zshoptions(1)
+setopt \
+	-o \
+	HIST_LEX_WORDS \
+	#
+
 # Save each invoked command to the history file after the command finishes.
 #
 # man:zshoptions(1)
