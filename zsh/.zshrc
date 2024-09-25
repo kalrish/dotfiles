@@ -174,7 +174,8 @@ function
 	# man:zshparam(1)
 	# man:zshmisc(1)
 	# man:zshexpn(1)
-	PS1=$'%n@%M %d\n${(l:3:)?} %# '
+	# man:strftime(3)
+	PS1=$'%n@%M %d\n%D{%R} ${(l:3:)?} %# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
