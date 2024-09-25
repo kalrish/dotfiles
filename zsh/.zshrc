@@ -45,6 +45,16 @@ setopt \
 	INC_APPEND_HISTORY_TIME \
 	#
 
+# Expand escape sequences that start with '%' in prompt sequences like `PS1`.
+#
+# man:zshbuiltins(1)
+# man:zshoptions(1)
+# man:zshmisc(1)
+setopt \
+	-o \
+	PROMPT_PERCENT \
+	#
+
 # Scope variables not needed beyond this script to it.
 #
 # From the manual page:
@@ -139,6 +149,14 @@ function
 	#
 	# man:zshparam(1)
 	HISTSIZE="$((maximum_value_32bit_integer))"
+
+	# Show only whether Zsh is running "with privileges" (`%#`) in the primary prompt.
+	#
+	# Zsh considers itself as running "with privileges" if "either the effective user ID is zero, or, if POSIX.1e capabilities are supported, […] at least one capability is raised in either the Effective or Inheritable capability vectors".
+	#
+	# man:zshparam(1)
+	# man:zshmisc(1)
+	PS1='%# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
