@@ -242,11 +242,13 @@ function
 	#
 	# Zsh considers itself as running "with privileges" if "either the effective user ID is zero, or, if POSIX.1e capabilities are supported, […] at least one capability is raised in either the Effective or Inheritable capability vectors".
 	#
+	# The color `#FF8700` corresponds to the one set by `tput -- setaf 208` as used for the primary Bash prompt.
+	#
 	# man:zshparam(1)
 	# man:zshmisc(1)
 	# man:zshexpn(1)
 	# man:strftime(3)
-	PS1=$'%F{green}%n@%M%f %F{blue}%d%f${_git_branch:+" %F{red}${_git_branch}%f"}\n%D{%R} ${(l:3:)?} %# '
+	PS1=$'%F{green}%n@%M%f %F{blue}%d%f${_git_branch:+" %F{red}${_git_branch}%f"}\n%F{#FF8700}%D{%R}%f ${(l:3:)?} %# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
