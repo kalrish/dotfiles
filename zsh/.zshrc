@@ -29,6 +29,14 @@ setopt \
 	HIST_FCNTL_LOCK \
 	#
 
+# Forget any command that begins with a space character.
+#
+# man:zshoptions(1)
+setopt \
+	-o \
+	HIST_IGNORE_SPACE \
+	#
+
 # Save each invoked command to the history file after the command finishes.
 #
 # man:zshoptions(1)
