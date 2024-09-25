@@ -29,6 +29,14 @@ function
 		xdg_state_home \
 		#
 
+	integer \
+		-- \
+		maximum_value_32bit_integer \
+		#
+
+	# The maximum value that a 32-bit signed integer type may represent is 2 to the power of 31 minus 1.
+	maximum_value_32bit_integer="$(( 2**31-1 ))"
+
 	# Get a path to this script file.
 	#
 	# Without limits like the maximum path length, the maximum recursion depth and the maximum number of symbolic links followed in path resolution, there would be infinite different paths pointing to each file system object.
@@ -90,4 +98,11 @@ function
 	#
 	# man:zshparam(1)
 	HISTFILE="${state_data_directory}/history"
+
+	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
+	#
+	# Zsh likely uses either such a type or a larger one internally.
+	#
+	# man:zshparam(1)
+	SAVEHIST="$((maximum_value_32bit_integer))"
 }
