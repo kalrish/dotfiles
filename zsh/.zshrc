@@ -55,6 +55,15 @@ setopt \
 	PROMPT_PERCENT \
 	#
 
+# Enable parameter expansion in prompt sequences like `PS1`.
+#
+# man:zshbuiltins(1)
+# man:zshoptions(1)
+setopt \
+	-o \
+	PROMPT_SUBST \
+	#
+
 # Scope variables not needed beyond this script to it.
 #
 # From the manual page:
@@ -154,8 +163,9 @@ function
 	#
 	# - the user's name (`%n`);
 	# - whether Zsh is running "with privileges" (`%#`) in the primary prompt;
-	# - the hostname (`%M`); and
-	# - the current working directory (`%d`).
+	# - the hostname (`%M`);
+	# - the current working directory (`%d`); and
+	# - the exit code of the last command (`${(l:3:)?}`), padded with spaces to the width of three characters.
 	#
 	# This information is split into two lines, with elements that may be long or whose length may vary in the first line.
 	#
@@ -163,7 +173,8 @@ function
 	#
 	# man:zshparam(1)
 	# man:zshmisc(1)
-	PS1=$'%n@%M %d\n%# '
+	# man:zshexpn(1)
+	PS1=$'%n@%M %d\n${(l:3:)?} %# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
