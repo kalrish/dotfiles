@@ -150,13 +150,13 @@ function
 	# man:zshparam(1)
 	HISTSIZE="$((maximum_value_32bit_integer))"
 
-	# Show only whether Zsh is running "with privileges" (`%#`) in the primary prompt.
+	# Show the user's name (`%n`) and whether Zsh is running "with privileges" (`%#`) in the primary prompt.
 	#
 	# Zsh considers itself as running "with privileges" if "either the effective user ID is zero, or, if POSIX.1e capabilities are supported, […] at least one capability is raised in either the Effective or Inheritable capability vectors".
 	#
 	# man:zshparam(1)
 	# man:zshmisc(1)
-	PS1='%# '
+	PS1='%n %# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
