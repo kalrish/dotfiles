@@ -246,7 +246,7 @@ function
 	# man:zshmisc(1)
 	# man:zshexpn(1)
 	# man:strftime(3)
-	PS1=$'%n@%M %d${_git_branch:+ ${_git_branch}}\n%D{%R} ${(l:3:)?} %# '
+	PS1=$'%F{green}%n@%M%f %d${_git_branch:+ ${_git_branch}}\n%D{%R} ${(l:3:)?} %# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
