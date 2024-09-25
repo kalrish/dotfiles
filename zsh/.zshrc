@@ -11,6 +11,13 @@ setopt \
 	APPEND_HISTORY \
 	#
 
+# man:zshoptions(1)
+# man:zshbuiltins(1)
+setopt \
+	-o \
+	DEBUG_BEFORE_CMD \
+	#
+
 # Keep track of when each command was executed and how long it took in the history file.
 #
 # man:zshoptions(1)
@@ -63,6 +70,70 @@ setopt \
 	-o \
 	PROMPT_SUBST \
 	#
+
+function _chpwd_function_git
+{
+	_update_git_prompt
+}
+
+function _get_git_branch
+{
+	# man:git-rev-parse(1)
+	git \
+		rev-parse \
+		--symbolic-full-name \
+		--abbrev-ref \
+		HEAD \
+		#
+} 2> /dev/null
+
+function _precmd_function_git
+{
+	if (( _must_update_git_prompt == 1 ))
+	then
+		_update_git_prompt
+	fi
+}
+
+function _update_git_prompt
+{
+	if ! _git_branch="$(_get_git_branch)"
+	then
+		unset \
+			-- \
+			_git_branch \
+			#
+	fi
+	_must_update_git_prompt=0
+}
+
+# man:zshmisc(1)
+function TRAPDEBUG
+{
+	if [[ "${ZSH_DEBUG_CMD}" == git\ * ]]
+	then
+		_must_update_git_prompt=1
+	fi
+}
+
+integer \
+	-- \
+	_must_update_git_prompt=1 \
+	#
+
+# Execute the function `_chpwd_function_git` "whenever the current working directory is changed".
+#
+# man:zshmisc(1)
+chpwd_functions=(
+	_chpwd_function_git
+)
+
+# Execute the function `_precmd_function_git` "before each prompt".
+#
+# man:zshmisc(1)
+precmd_functions=(
+	_precmd_function_git
+)
 
 # Scope variables not needed beyond this script to it.
 #
@@ -175,7 +246,7 @@ function
 	# man:zshmisc(1)
 	# man:zshexpn(1)
 	# man:strftime(3)
-	PS1=$'%n@%M %d\n%D{%R} ${(l:3:)?} %# '
+	PS1=$'%n@%M %d${_git_branch:+ ${_git_branch}}\n%D{%R} ${(l:3:)?} %# '
 
 	# Keep as many commands in the history file as the maximum value of a 32-bit signed integer type.
 	#
