@@ -61,6 +61,17 @@ readonly \
 	INPUTRC \
 	#
 
+if command_GNU ls
+then
+	# Have GNU `ls` distinguish file types with colors.
+	#
+	# info:(coreutils)General_output_formatting
+	# man:alias(1p)
+	alias \
+		ls='ls --color=auto' \
+		#
+fi
+
 if command_available jq
 then
 	alias jqless='_qless jq'
