@@ -61,6 +61,24 @@ readonly \
 	INPUTRC \
 	#
 
+if command_GNU grep
+then
+	# Have GNU `grep` color:
+	#
+	# - matched non-empty strings;
+	# - matching lines;
+	# - context lines;
+	# - file names;
+	# - line numbers;
+	# - byte offsets; and
+	# - separators.
+	#
+	# (grep)General_Output_Control
+	# man:alias(1p)
+	alias \
+		grep='grep --color=auto' \
+		#
+fi
 if command_GNU ls
 then
 	# Have GNU `ls` distinguish file types with colors.
