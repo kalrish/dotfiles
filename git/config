@@ -46,7 +46,7 @@
 
 	date = iso
 
-	showSignature = true
+	showSignature = false
 
 
 [merge]
