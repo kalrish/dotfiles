@@ -19,6 +19,14 @@ Do so by executing the following command with a [POSIX shell][]:
 git clone -- https://codeberg.org/djsp/dotfiles.git "${XDG_CONFIG_HOME:-${HOME}/.config}"
 ```
 
+### Windows
+
+On Windows, check out this repository by executing the following command with [cmd.exe][]:
+
+```Batchfile
+git -c core.autocrlf=false clone -- https://codeberg.org/djsp/dotfiles.git "%USERPROFILE%/.config"
+```
+
 ## other applications
 
 My personal configuration for some applications is in separate repositories:
@@ -28,6 +36,7 @@ My personal configuration for some applications is in separate repositories:
 - [OpenSSH][]: [`djsp/ssh_config` @ codeberg.org](https://codeberg.org/djsp/ssh_config)
 
 
+[cmd.exe]: https://en.wikipedia.org/wiki/Cmd.exe
 [command-line shell]: https://wiki.archlinux.org/title/Command-line_shell
 [GNU Privacy Guard]: https://www.gnupg.org/
 [OpenSSH]: https://www.openssh.com/
