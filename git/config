@@ -11,6 +11,10 @@
 
 [core]
 
+	# Keep git from converting ␊ into ␍␊ in files it checks out
+	# https://markentier.tech/posts/2021/10/autocrlf-true-considered-harmful/
+	autocrlf = false
+
 	editor = nvim
 
 	pager = less --no-init --quit-if-one-screen
